@@ -16276,7 +16276,7 @@
 																													<div class="pro-gallery-parent-container" role="region" aria-label="Blog feed">
 																														<div id="pro-gallery-container-pro-blog" class="pro-gallery inline-styles  ltr " style="height:340.5px;overflow-x:hidden">
 																															<div id="pro-gallery-margin-container-pro-blog" class="pro-gallery-margin-container" style="margin:0px;height:340.5px;width:940px;overflow:visible;position:relative">
-																																<div data-id="bb097857-d83c-4ad7-9337-76c957f85ccc" class="item-link-wrapper" data-idx="0" data-hook="item-link-wrapper" tabindex="-1">
+																																<div data-id="bb097857-d83c-4ad7-9337-76c957f85ccc" class="item-link-wrapper patriarch-blog-static-demo" data-idx="0" data-hook="item-link-wrapper" tabindex="-1" hidden>
 																																	<div class="gallery-item-container item-container-regular has-custom-focus visible" id="pgibb097857d83c4ad7933776c957f85ccc_0" data-hash="bb097857-d83c-4ad7-9337-76c957f85ccc" data-id="bb097857-d83c-4ad7-9337-76c957f85ccc" data-idx="0" data-hook="item-container" style="overflow-y:hidden;position:absolute;bottom:auto;margin:0;top:0;left:0;right:auto;width:940px;height:340.5px;overflow:hidden;border-width:1px;border-color:rgba(232,230,230,0.75);border-style:solid;transition:opacity .2s ease;opacity:1;display:block">
 																																		<div data-idx="0" id="item-action-bb097857-d83c-4ad7-9337-76c957f85ccc" class="item-action" tabindex="0" data-hook="item-action" aria-label="August is Patriarch Month!"></div>
 																																		<div style="float:left">
@@ -16289,6 +16289,9 @@
 																																				</div>
 																																			</div>
 																																		</div>
+
+																																		<!-- Gallery Item Template -->
+																																		<!--
 																																		<div class="gallery-item-common-info-outer [object Object]" style="height:340.5px;float:right">
 																																			<div style="overflow:hidden;box-sizing:border-box;height:100%;width:486px" class="gallery-item-common-info gallery-item-right-info">
 																																				<div class="RiOfiW pu51Xe TBrkhx blog-post-description-font blog-text-color blog-card-background-color blog-card-border-color post-list-item blog-post-homepage-border-color blog-post-homepage-post-container blog-post-homepage-background-color _UH27m" style="border-width:0;--wix-blog-inline-padding:36px" data-hook="post-list-item">
@@ -16346,6 +16349,12 @@
 																																				</div>
 																																			</div>
 																																		</div>
+																																		-->
+																																		<!-- End Gallery Item Template -->
+
+																																		<!-- Inserted content here -->
+
+
 																																	</div>
 																																</div>
 																															</div>
@@ -16355,6 +16364,9 @@
 																												</div>
 																											</div>
 																										</div>
+																										<nav id="patriarch-blog-pagination-nav" aria-label="Blog pagination">
+																											<!-- Put Pagination Here-->
+																										</nav>
 																										<div class="vpm41p"></div>
 																									</div>
 																								</div>
@@ -30355,6 +30367,35 @@
 
 	<!-- detect browser zoom -->
 
+	<style>
+		.patriarch-blog-pagination {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 8px;
+			margin: 24px auto 8px;
+			max-width: 940px;
+		}
+
+		.patriarch-blog-pagination__link {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 36px;
+			height: 36px;
+			padding: 0 10px;
+			border: 1px solid rgba(232, 230, 230, 0.75);
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		.patriarch-blog-pagination__link--active {
+			font-weight: 700;
+			pointer-events: none;
+		}
+	</style>
+	<script src="./posts.js"></script>
+	<script src="./blog-posts.js" defer></script>
 
 </body>
 
