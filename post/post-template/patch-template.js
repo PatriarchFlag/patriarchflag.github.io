@@ -102,6 +102,27 @@ if (!html.includes('data-hook="blog-all-posts-bottom"')) {
 	html = html.replace(/<\/article>\s*<\/div>\s*<\/div>\s*<\/div>\s*<\/div>\s*<\/div>/, '</article>' + bottomAllPostsBlock + '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>');
 }
 
+const headerNavCss = `
+		/* Header nav: white bar must span full menu (Wix width stretch JS not running) */
+		#comp-kq55t877.bq59qZ {
+			overflow: visible !important;
+			width: max-content !important;
+			min-width: 553px;
+		}
+
+		#comp-kq55t877 .wTjmlM {
+			width: max-content !important;
+			min-width: 100%;
+			box-sizing: border-box;
+		}
+
+		#comp-kq54xwql,
+		[data-mesh-id=comp-kq54xwqlinlineContent],
+		[data-mesh-id=comp-kq54xwqlinlineContent-gridContainer] {
+			overflow: visible !important;
+		}
+`;
+
 const blogNavCss = `
 		/* Compact "All Posts" blog nav (top and bottom) */
 		.urT2WH [data-hook="blog-desktop-header-container"],
@@ -139,6 +160,13 @@ html = html.replace(
 	''
 );
 html = html.replace(/\.patriarch-post-all-posts[\s\S]*?\}\s*/g, '');
+
+if (!html.includes('Header nav: white bar must span full menu')) {
+	html = html.replace(
+		'/* Patriarch archive: show header nav without Wix hydration */',
+		headerNavCss + '\n\t\t/* Patriarch archive: show header nav without Wix hydration */'
+	);
+}
 
 if (!html.includes('Compact "All Posts" blog nav')) {
 	html = html.replace(
