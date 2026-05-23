@@ -22604,7 +22604,15 @@
 			display: none;
 		}
 
-		/* Simple <section> body injected by render-post.js */
+		/* Simple <section> body injected by render-post.js (semantic HTML over Wix resets) */
+		.patriarch-post-body {
+			font-size: var(--textParagraphFont-size, 18px);
+			line-height: var(--textParagraphFont-line-height, 22px);
+			font-family: var(--textParagraphFont-family, sans-serif);
+			font-weight: normal;
+			color: rgb(var(--textParagraphColor-rgb, 0, 0, 0));
+		}
+
 		.patriarch-post-body figure {
 			margin: 1.5em 0;
 		}
@@ -22623,6 +22631,115 @@
 
 		.patriarch-post-body p {
 			margin: 0 0 1em;
+			font-weight: normal;
+		}
+
+		.patriarch-post-body h1 {
+			font-family: var(--textH1Font-family, "suez one", serif);
+			font-size: var(--textH1Font-size, 40px);
+			line-height: var(--textH1Font-line-height, 50px);
+			font-weight: 700;
+			font-style: normal;
+			margin: 0 0 0.75em;
+		}
+
+		.patriarch-post-body h2 {
+			font-family: var(--textH2Font-family, "suez one", serif);
+			font-size: var(--textH2Font-size, 28px);
+			line-height: var(--textH2Font-line-height, 35px);
+			font-weight: 700;
+			font-style: normal;
+			margin: 1.5em 0 0.75em;
+		}
+
+		.patriarch-post-body h3 {
+			font-family: var(--textH3Font-family, "suez one", serif);
+			font-size: var(--textH3Font-size, 22px);
+			line-height: var(--textH3Font-line-height, 27px);
+			font-weight: 700;
+			font-style: normal;
+			margin: 1.25em 0 0.5em;
+		}
+
+		.patriarch-post-body h4 {
+			font-family: var(--textH4Font-family, "suez one", serif);
+			font-size: var(--textH4Font-size, 20px);
+			line-height: var(--textH4Font-line-height, 25px);
+			font-weight: 700;
+			margin: 1em 0 0.5em;
+		}
+
+		.patriarch-post-body h5 {
+			font-family: var(--textH5Font-family, "suez one", serif);
+			font-size: var(--textH5Font-size, 18px);
+			line-height: var(--textH5Font-line-height, 22px);
+			font-weight: 700;
+			margin: 1em 0 0.5em;
+		}
+
+		.patriarch-post-body h6 {
+			font-family: var(--textH6Font-family, "suez one", serif);
+			font-size: var(--textH6Font-size, 16px);
+			line-height: var(--textH6Font-line-height, 20px);
+			font-weight: 700;
+			margin: 1em 0 0.5em;
+		}
+
+		.patriarch-post-body h2:first-child,
+		.patriarch-post-body h3:first-child {
+			margin-top: 0;
+		}
+
+		.patriarch-post-body strong,
+		.patriarch-post-body b {
+			font-family: roboto-bold, var(--textParagraphFont-family, sans-serif);
+			font-weight: 700;
+		}
+
+		.patriarch-post-body em,
+		.patriarch-post-body i {
+			font-style: italic;
+		}
+
+		.patriarch-post-body ul {
+			list-style-type: disc;
+			list-style-position: outside;
+			margin: 0 0 1em;
+			padding-left: 1.75em;
+		}
+
+		.patriarch-post-body ol {
+			list-style-type: decimal;
+			list-style-position: outside;
+			margin: 0 0 1em;
+			padding-left: 1.75em;
+		}
+
+		.patriarch-post-body ul ul {
+			list-style-type: circle;
+			margin-bottom: 0.25em;
+		}
+
+		.patriarch-post-body ol ol {
+			list-style-type: lower-alpha;
+		}
+
+		.patriarch-post-body li {
+			display: list-item;
+			margin: 0.35em 0;
+		}
+
+		.patriarch-post-body blockquote {
+			margin: 1em 0;
+			padding: 0.5em 0 0.5em 1em;
+			border-left: 3px solid rgba(0, 0, 0, 0.2);
+			font-style: italic;
+			white-space: pre-line;
+		}
+
+		.patriarch-post-body a {
+			color: rgb(var(--textLinksAndHashtagsColor-rgb, var(--postButtonBackgroundColor-rgb, 0, 0, 0)));
+			text-decoration: underline;
 		}
 
 		/* Post content: remove top spacing on main wrappers */
