@@ -8,6 +8,7 @@ Static Wix blog layout and assets for Patriarch Flag posts.
 |------|---------|
 | `layout.html` | Full Wix post page shell with `@@PATRIARCH_*@@` placeholders |
 | `render-post.js` | Browser script: reads simple `<article>` source, writes rendered page |
+| `share-post.js` | Share buttons: Facebook, X, LinkedIn, copy link, print |
 | `layout-bundle.js` | Embedded copy of `layout.html` (for opening posts via `file://` / double-click) |
 | `bundle-layout.js` | Regenerates `layout-bundle.js` after layout changes |
 | `patch-template.js` | Strips likes/comments/stats; sets dynamic copyright (runs after prepare) |

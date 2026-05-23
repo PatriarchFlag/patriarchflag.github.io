@@ -139,6 +139,9 @@
 		document.open();
 		document.write(html);
 		document.close();
+		if (typeof window.initPatriarchShareButtons === 'function') {
+			window.initPatriarchShareButtons();
+		}
 	}
 
 	if (document.readyState === 'loading') {
