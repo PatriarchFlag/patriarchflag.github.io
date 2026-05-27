@@ -159,10 +159,13 @@
 			escapeHtml(post.title) +
 			'</h2></div></div></a>' +
 			'<div class="CHRJex JMCi2v pu51Xe TBrkhx mqysW5">' +
+			'<a class="O16KGI pu51Xe TBrkhx mqysW5" href="' +
+			escapeHtml(post.href) +
+			'">' +
 			'<div style="font-size:16px" class="nebVix TBrkhx blog-post-description-style-font blog-post-homepage-description-style-font mABNle HhgCcE" data-hook="post-description">' +
 			'<div class="wR7PET"><div class="BOlnTh" style="-webkit-line-clamp:3">' +
 			escapeHtml(post.excerpt) +
-			'</div></div></div></div></div>' +
+			'</div></div></div></a></div></div>' +
 			'<div class="SbjQym YD6Z1G blog-post-metadata-font post-header blog-post-description-font blog-post-homepage-description-font Bt5sQV TjmPXo" style="font-size:12px">' +
 			'<div class="V_aJB6 CH7asw dXvq5u">' +
 			'<span data-hook="profile-link">' +
